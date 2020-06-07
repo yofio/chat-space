@@ -1,0 +1,65 @@
+@import "config/color";
+
+.side-bar {
+  width: 300px;
+  background-color: #253141;
+  height: 100vh;
+  float: left;
+
+  .side-bar__user--header {
+    height: 100px;
+    padding:0 20px;
+    align-items: center;
+    display: flex;
+  }
+
+  .side-ber__user--box{
+    line-height: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    .side-bar__user__box--name{
+      color: $white_color;
+      font-weight: bold;
+    }
+
+    .side-bar__user__box__list{
+      width: 60px;
+      display: flex;
+      text-decoration: none;
+      justify-content: flex-end;
+      
+      .side-bar__user__box__list--new-group{
+        color: $white_color;
+        margin-right: 5px;
+      }
+
+      .side-bar__user__box__list--edit-user{
+        color: $white_color;
+      }
+    }
+    
+  }
+  .groups{
+    height: calc(100vh - 100px);
+    background-color: #2f3e51;
+    padding: 20px 20px;
+
+    .group{
+      margin-bottom: 40px;
+
+      .group__name{
+      font-size: 15px;
+      margin-bottom: 5px;
+      }
+
+      .group__latest__message{
+        font-size: 11px;
+      }
+    }
+
+    
+  }
+
+}

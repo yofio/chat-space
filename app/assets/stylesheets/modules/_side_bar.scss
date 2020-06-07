@@ -6,36 +6,36 @@
   height: 100vh;
   float: left;
 
-  .side-bar__user--header {
+  &__user--header {
     height: 100px;
     padding:0 20px;
     align-items: center;
     display: flex;
   }
 
-  .side-ber__user--box{
+  &__user__box{
     line-height: 20px;
     display: flex;
     width: 100%;
     justify-content: space-between;
 
-    .side-bar__user__box--name{
+    &--name{
       color: $white_color;
       font-weight: bold;
     }
 
-    .side-bar__user__box__list{
+    &__list{
       width: 60px;
       display: flex;
       text-decoration: none;
       justify-content: flex-end;
       
-      .side-bar__user__box__list--new-group{
+      &--new-group{
         color: $white_color;
         margin-right: 5px;
       }
 
-      .side-bar__user__box__list--edit-user{
+      &--edit-user{
         color: $white_color;
       }
     }
@@ -49,12 +49,12 @@
     .group{
       margin-bottom: 40px;
 
-      .group__name{
+      &__name{
       font-size: 15px;
       margin-bottom: 5px;
       }
 
-      .group__latest__message{
+      &__latest__message{
         font-size: 11px;
       }
     }

@@ -1,0 +1,34 @@
+.chat-main
+  .chat-main__group--info
+    .main-header__left-box
+      %h2.main-header__left-box__current-group 
+        kkk
+      %ul.main-header__left-box__user__list 
+        Member:
+        %li.main-header__left-box__user__list--name 
+          aaa
+    = link_to "#" do
+      .main-header__edit-btn Edit
+  .messages
+    .message
+      .message__info
+        %p.message__info__user-name uuu
+        %p.message__info__date 2020/06/03(sun)11:34:22
+      %p.message__text dddd
+    .message
+      .message__info
+        %p.message__info__user-name ggg
+        %p.message__info__date 2020/06/08(sat)17:55:22
+      %p.message__text mmmm
+      
+
+  .form
+    = form_for "", method: :post, html: {class: "new_message"} do |f|
+      .input-box
+        %input.input-box__text{:name => "message", :placeholder => "type a message", :type => "text_field"}
+        %label{class: "input-box__image"}
+          = icon("fa", "image")
+          %input.input-box__image__file{type: "file", name: "message"}
+          
+
+      = f.submit value: "Send", class: "submit-btn"

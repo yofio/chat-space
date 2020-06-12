@@ -12,13 +12,11 @@
             %i.fa.fa-cog
       
   .groups
-    = link_to "#" do
+    - current_user.groups.each do |group|
       .group
-        %p.group__name test group
-        %p.group__latest__message まだメッセージがありません
-    = link_to "#" do
-      .group
-        %p.group__name test group2
-        %p.group__latest__message まだメッセージがありません2
-
+        = link_to "#" do
+          %p.group__name 
+            = group.name
+          %p.group__latest__message まだメッセージがありません
+     
     
